@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Details</title>
+
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#081b29;
+  color:#ededed;
+}
+
+/* HEADER */
+.header{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:20px 10%;
+  background:#051129;
+  display:flex;
+  justify-content:space-between;
+  z-index:100;
+}
+
+.header a{
+  color:#0ef;
+  text-decoration:none;
+  font-size:18px;
+}
+
+/* MAIN */
+.container{
+  padding:120px 10% 60px;
+  max-width:1100px;
+  margin:auto;
+}
+
+/* TITLE */
+.title{
+  font-size:42px;
+  color:#0ef;
+  margin-bottom:20px;
+}
+
+/* IMAGE */
+.project-img{
+  width:100%;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 0 25px rgba(0,238,255,0.3);
+}
+
+.project-img img{
+  width:100%;
+  display:block;
+}
+
+/* CARD */
+.card{
+  margin-top:30px;
+  padding:30px;
+  background:#051129;
+  border-radius:15px;
+  border:1px solid rgba(0,238,255,0.2);
+  box-shadow:0 0 20px rgba(0,238,255,0.1);
+}
+
+/* TEXT */
+.card h2{
+  color:#0ef;
+  margin-bottom:15px;
+}
+
+.card p{
+  line-height:1.7;
+  margin-bottom:15px;
+}
+
+/* FEATURES */
+.features{
+  margin-top:10px;
+}
+
+.features li{
+  margin:8px 0;
+  list-style:none;
+}
+
+.features li::before{
+  content:"✔ ";
+  color:#0ef;
+}
+
+/* BUTTONS */
+.buttons{
+  margin-top:20px;
+}
+
+.btn{
+  display:inline-block;
+  padding:12px 25px;
+  margin-right:10px;
+  background:#0ef;
+  color:#081b29;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+  transition:.3s;
+}
+
+.btn:hover{
+  box-shadow:0 0 20px #0ef;
+  transform:translateY(-3px);
+}
+
+/* BACK */
+.back{
+  display:inline-block;
+  margin-top:30px;
+  color:#0ef;
+  text-decoration:none;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .header{
+    padding:18px 6%;
+  }
+  .container{
+    padding:110px 6% 40px;
+  }
+  .title{
+    font-size:34px;
+  }
+  .card{
+    padding:24px;
+  }
+  .buttons{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .btn{
+    width:100%;
+    margin-right:0;
+    text-align:center;
+  }
+  .back{
+    display:block;
+    margin-top:25px;
+  }
+}
+
+@media(max-width:600px){
+  .header{
+    padding:16px 4%;
+  }
+  .title{
+    font-size:28px;
+  }
+  .container{
+    padding:100px 4% 30px;
+  }
+  .card{
+    padding:20px;
+  }
+  .btn{
+    padding:12px 18px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <a href="index.html"><i class='bx bx-arrow-back'></i> Back</a>
+</header>
+
+<!-- CONTENT -->
+<div class="container">
+
+  <h1 class="title">Online Shop Website</h1>
+
+  <div class="project-img">
+    <img src="p1.png" alt="Project Image">
+  </div>
+
+  <div class="card">
+    <h2>Project Description</h2>
+    <p>
+      This is a modern e-commerce website built using HTML, CSS, and JavaScript.
+      It provides a smooth shopping experience with responsive design and interactive UI.
+    </p>
+
+    <h2>Features</h2>
+    <ul class="features">
+      <li>Product listing page</li>
+      <li>Add to cart system</li>
+      <li>Search functionality</li>
+      <li>Responsive design</li>
+    </ul>
+
+    <div class="buttons">
+      <a href="#" class="btn">Live Demo</a>
+      <a href="https://github.com/jeroneakash182-pixel" class="btn">GitHub Code</a>
+    </div>
+
+    <a href="index.html" class="back">← Back to Portfolio</a>
+  </div>
+
+</div>
+
+</body>
+</html>
